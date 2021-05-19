@@ -1,0 +1,140 @@
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+/*Global*/
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+ul {
+  padding: 0%;
+  margin: 0%;
+}
+/*header*/
+header {
+  background-color: black;
+  color: white;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: rgb(70, 68, 68) 20px solid;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+header a:hover {
+  color: gray;
+}
+header li {
+  float: right;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header ul {
+  margin: 0%;
+  padding: 0%;
+}
+header #branding h1 {
+  float: left;
+  margin: 0%;
+}
+header nav {
+  float: right;
+}
+img[src$=".jpg"] {
+  width: 30%;
+  height: 30%;
+  border-radius: 20px;
+}
+.top-half-wallpaper {
+  background: url(imgs/ilya-pavlov-OqtafYT5kTw-unsplash.jpg) no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.page-title {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  color: rgba(250, 250, 250, 0.925);
+}
+.section {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(70, 68, 68);
+}
+.container {
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding-top: 100px;
+}
+.content-section p {
+  float: right;
+  width: 30%;
+}
+.image-section {
+  float: left;
+  width: 60%;
+}
+.image-section img {
+  width: 60%;
+}
+.content-section #About {
+  text-transform: uppercase;
+  font-size: 28px;
+  text-align: center;
+}
+
+.content-section .content p {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: -20px;
+  margin-right: auto;
+}
+
+section img[src$=".png"] {
+  width: 200px;
+  height: 200px;
+}
+#github-icon {
+  display: flex;
+  margin: 5%;
+  margin-top: 100px;
+  text-align: center;
+  padding: 40px;
+}
+.github-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.github-container img {
+  padding-right: 150px;
+  padding-left: 150px;
+}
+@media (max-width: 768px) {
+  header .container,
+  header .highlight,
+  header nav li,
+  section .container,
+  .section h1,
+  .section #about,
+  .section p,
+  .image-section img,
+  #github-icon a {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+}
