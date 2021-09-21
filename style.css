@@ -2,7 +2,7 @@ body {
   font: 15px/1.5 Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
-  background-color: rgb(241, 233, 233);
+  background-color: rgb(255, 255, 255);
 }
 /*Global*/
 .container {
@@ -15,10 +15,10 @@ ul {
   margin: 0%;
 }
 
-li a button {
+li a {
   font-weight: 500;
   font-size: 16px;
-  color: white;
+  color: rgb(38, 131, 50);
   text-decoration: none;
 }
 /*header*/
@@ -40,11 +40,8 @@ header {
   padding: 0px 20px;
 }
 
-.nav_links li a {
-  /* transition: all 0.3ease 0s; */
-}
 .nav_links li a:hover {
-  color: #0088a9;
+  color: rgb(161, 111, 161);
 }
 button {
   margin-left: 20px;
@@ -56,16 +53,13 @@ button {
   /* transition: all 0.3ease 0s; */
 }
 button:hover {
-  background-color: purple;
+  background-color: rgb(161, 111, 161);
 }
 
 /*header*/
 
-img[src$=".jpg"] {
-  width: 30%;
-  height: 30%;
-  border-radius: 20px;
-}
+/*main section*/
+
 .top-half-wallpaper {
   background: url(imgs/ilya-pavlov-OqtafYT5kTw-unsplash.jpg) no-repeat;
   width: 100%;
@@ -118,6 +112,43 @@ section img[src$=".png"] {
   width: 200px;
   height: 200px;
 }
+/*main section*/
+
+/*about me section*/
+.about-me-div {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: gray;
+}
+
+.about-me-pic {
+  flex: 1 1 50%;
+}
+.about-me-bio {
+  flex: 1 1 50%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+  margin: auto;
+}
+img[src$=".jpg"] {
+  width: 50%;
+  height: 98.5%;
+  border-radius: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-style: solid;
+  border-color: white;
+  box-shadow: 0 0 20px rgb(153, 147, 147);
+}
+.about-me-bio p {
+  color: white;
+}
+
+/*about me section*/
+
 /*media query*/
 @media (max-width: 768px) {
   header .container,
@@ -186,7 +217,7 @@ footer {
   font-size: 1.1rem;
 }
 .socials a:hover i {
-  color: purple;
+  color: rgb(161, 111, 161);
 }
 .footer-bottom {
   background: black;
