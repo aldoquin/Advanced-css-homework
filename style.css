@@ -152,11 +152,14 @@ section img[src$=".png"] {
 .project-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 15%;
+  background: rgb(114, 102, 102);
 }
 .pic-1 {
   width: 30%;
   height: 200px;
-  border: 5px dashed #f7a239;
+  border: 5px solid #141414;
 }
 .picture-1 {
   width: 100%;
@@ -166,7 +169,7 @@ section img[src$=".png"] {
 .pic-2 {
   width: 30%;
   height: 200px;
-  border: 5px dashed #f7a239;
+  border: 5px solid #141414;
 }
 .picture-2 {
   width: 100%;
@@ -175,8 +178,8 @@ section img[src$=".png"] {
 }
 .pic-3 {
   width: 30%;
-  height: 200px;
-  border: 5px dashed #f7a239;
+  height: 190px;
+  border: 5px solid #141414;
 }
 .picture-3 {
   width: 100%;
@@ -185,14 +188,29 @@ section img[src$=".png"] {
 }
 .pic-4 {
   width: 30%;
-  height: 200px;
-  border: 5px dashed #f7a239;
+  height: 190px;
+  border: 5px solid #141414;
 }
 .picture-4 {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+.caption-1 {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+.caption-2 {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
 /*project section*/
 
 /*media query*/
@@ -218,7 +236,6 @@ footer {
   background-color: black;
   height: auto;
   width: 100vw;
-  padding-top: 20px;
   color: white;
 }
 
@@ -266,7 +283,7 @@ footer {
   color: rgb(161, 111, 161);
 }
 .footer-bottom {
-  background: black;
+  background: rgb(128, 33, 33);
   width: 100vw;
   padding: 20px 0;
   text-align: center;
